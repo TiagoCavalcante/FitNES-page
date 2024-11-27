@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="pt-br" class = "scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <link href="./output.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <nav
+    class="fixed top-0 w-full text-white shadow-lg z-50 transition-all duration-300 bg-[#0a152a]"
+    id="navbar"
+  >
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex justify-between items-center">
+        <a
+          href="#home"
+          class="text-2xl font-bold text-yellow-400 flex items-center"
+        >
+          <img
+            src="./imgs/logo.png"
+            alt="Logo"
+            class="w-10 h-10 rounded-full mr-2 transition-transform duration-300 hover:rotate-12"
+          />
+          <span class="hover:text-yellow-300 transition-colors duration-300">
+            FITNES
+          </span>
+        </a>
+        <div class="hidden md:flex space-x-6">
+          <a
+            href="#home"
+            class="nav-link hover:text-yellow-400 transition-colors duration-300"
+          >
+            <i class="fas fa-home mr-2"></i>Home
+          </a>
+          <a
+            href="#about"
+            class="nav-link hover:text-yellow-400 transition-colors duration-300"
+          >
+            <i class="fas fa-user mr-2"></i>Sobre
+          </a>
+          <a
+            href="planos.html"
+            class="nav-link hover:text-yellow-400 transition-colors duration-300"
+          >
+            <i class="fas fa-graduation-cap mr-2"></i>Planos
+          </a>
+          <a
+            href="cliente.html"
+            class="nav-link hover:text-yellow-400 transition-colors duration-300"
+          >
+            <i class="fas fa-graduation-cap mr-2"></i>Espaço do cliente
+          </a>
+          <a
+            href="academias.html"
+            class="nav-link hover:text-yellow-400 transition-colors duration-300"
+          >
+            <i class="fas fa-graduation-cap mr-2"></i>Academias
+          </a>
+          <a
+            href="#contact"
+            class="nav-link hover:text-yellow-400 transition-colors duration-300"
+          >
+            <i class="fas fa-envelope mr-2"></i>Contato
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button
+            id="menu-toggle"
+            class="text-white focus:outline-none hover:text-yellow-400 transition-colors duration-300"
+          >
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="md:hidden hidden bg-purple-900/95 p-4">
+      <a
+        href="#home"
+        class="block py-2 px-4 text-sm hover:bg-purple-700 hover:text-yellow-400 transition-colors duration-300 flex items-center"
+        ><i class="fas fa-home mr-2"></i>Início</a
+      >
+      <a
+        href="#about"
+        class="block py-2 px-4 text-sm hover:bg-purple-700 hover:text-yellow-400 transition-colors duration-300 flex items-center"
+        ><i class="fas fa-user mr-2"></i>Sobre</a
+      >
+      <a
+        href="planos.html"
+        class="block py-2 px-4 text-sm hover:bg-purple-700 hover:text-yellow-400 transition-colors duration-300 flex items-center"
+        ><i class="fas fa-user mr-2"></i>Planos</a
+      >
+      <a
+        href="#contact"
+        class="block py-2 px-4 text-sm hover:bg-purple-700 hover:text-yellow-400 transition-colors duration-300 flex items-center"
+        ><i class="fas fa-envelope mr-2"></i>Contato</a
+      >
+    </div>
+  </nav>
+  <!-- Hero -->
+  <section
+      id="home"
+      class="pt-28 pb-24 bg-cover bg-center h-screen text-white min-h-screen flex items-center relative overflow-hidden" style="background-image: url('./imgs/BG-Inicio.png')"
+    >
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gray-100">
+                Seja bem vindo à <span class="text-yellow-300">FITNES</span>
+              </h1>
+              <p class="text-1xl italic md:text-2xl mb-8">
+                Transformando vidas
+              </p>
+              <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                <span
+                  class="bg-yellow-300 bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-full px-4 py-2 text-sm font-semibold"
+                >
+                  <i class="fas fa-code mr-2"></i>Praticidade
+                </span>
+                <span
+                  class="bg-yellow-300 bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-full px-4 py-2 text-sm font-semibold"
+                >
+                  <i class="fas fa-spider mr-2"></i>Qualidade
+                </span>
+                <span
+                  class="bg-yellow-300 bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-full px-4 py-2 text-sm font-semibold"
+                >
+                  <i class="fas fa-robot mr-2"></i>Eficiência
+                </span>
+              </div>
+              <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                <a
+                  href="#contact"
+                  class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105"
+                >
+                  <i class="fas fa-envelope mr-2"></i>
+  
+                  Fale conosco
+                </a>
+                <a
+                  href="planos.html"
+                  class="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-full hover:bg-white hover:text-indigo-600 transition duration-300 transform hover:scale-105"
+                >
+                  <i class="fas fa-briefcase mr-2"></i>
+                  Ver Planos
+                </a>
+              </div>    
+          </div>
+          <div class="md:w-1/2 mt-12 md:mt-0 ml-96" data-aos="fade-left" data-aos-duration="1000">
+            <blockquote
+            class="text-2xl italic font-semibold text-white mb-8"
+            >
+              "Os limites só existem se você os deixar existir."" – <span class="text-gray-500">Son goku</span>
+            </blockquote>
+
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Sobre Mim -->
+  <section id="about" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-5">
+      <h2
+        class="text-5xl font-bold text-center text-white mb-12"
+        data-aos="fade-up" data-aos-duration="1000"
+      >
+        Sobre Nós
+      </h2>
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
+          <img class= 'p-1 shadow-2xl rounded-lg'src="./imgs/sobre-1.png">
+        </div>
+        <div class="md:w-1/2 md:pl-12" data-aos="fade-left" data-aos-duration="1000">
+          <blockquote
+            class="text-2xl italic font-semibold text-white mb-8"
+          >
+            "Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser realizado." – Roberto Shinyashiki
+          </blockquote>
+          <p class="text-lg text-white leading-relaxed mb-6">
+            🏋️Somos a 
+            <span class="font-bold text-yellow-500">Fitness Academy!</span>,
+             Transformando vidas através da saúde, movimento e bem-estar.
+             Somos uma academia comprometida em ajudar você a alcançar seus objetivos físicos e mentais em um ambiente motivador e acolhedor.
+          </p>
+          <p class="text-lg text-white leading-relaxed mb-6">
+            🚀 Na Fitness Academy, acreditamos que cada jornada é única. Por isso, oferecemos
+             uma variedade de treinos personalizados, desde musculação e aulas coletivas até 
+             programas focados em condicionamento funcional e bem-estar mental. Nossa missão é
+              ser o suporte que você precisa para transformar suas metas em conquistas.
+
+
+          </p>
+          <p class="text-lg text-white leading-relaxed mb-6">
+            💡 Nossa equipe é formada por profissionais qualificados e apaixonados pelo que fazem.
+             Seja você iniciante ou experiente, estamos aqui para orientar, motivar e celebrar cada passo da sua evolução.
+          </p>
+          <p class="text-lg text-white leading-relaxed mb-6">
+
+            🎯 Nosso objetivo? Mais do que moldar corpos, queremos transformar vidas.
+             Na Fitness Academy, você encontra mais do que equipamentos de ponta –
+              encontra uma comunidade que valoriza sua saúde, autoestima e crescimento pessoal.
+          </p>
+          <p class="text-lg text-white leading-relaxed mb-6">
+            👟 Venha fazer parte dessa jornada. 
+          </p>
+          <span class="text-2xl italic font-semibold text-yellow-500">Fitness Academy: sua melhor versão começa aqui!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="py-20 bg-[#131543] text-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
+        Fale conosco!
+      </h2>
+      <div class="flex flex-wrap justify-center items-center gap-6">
+        <a
+          href="#"
+          target="_blank"
+          class="flex items-center bg-[#0BBF41] text-white py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 hover:bg-gray-100"
+          data-aos="zoom-in" data-aos-duration="1000"
+        >
+          <i class="fab text-3xl mr-3"></i>
+          <span class="text-xl font-semibold">Whatsapp</span>
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          class="flex items-center bg-blue-500 hover:bg-blue-600 py-3 px-6 rounded-full transition duration-300 transform hover:scale-105"
+          data-aos="zoom-in" data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <i class="fab text-3xl mr-3"></i>
+          <span class="text-xl font-semibold">Telefone</span>
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          class="flex items-center bg-[#9d1c87] hover:bg-pink-600 py-3 px-6 rounded-full transition duration-300 transform hover:scale-105"
+          data-aos="zoom-in" data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <i class="fab fa-instagram text-3xl mr-3"></i>
+          <span class="text-xl font-semibold">Instagram</span>
+        </a>
+        <a href="#" class="flex items-center bg-yellow-500 hover:bg-yellow-600 py-3 px-6 rounded-full transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-delay="400">
+          <i class="fas fa-envelope text-3xl mr-3"></i>
+          <span class="text-xl font-semibold">E-mail</span>
+        </a>
+      </div>
+      <div class="mt-12 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <p class="text-xl">
+          Entre em contato conosco e veja sua vida mudar. 
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2024 Pedro Neves. Tem direito nenhuma essa peste.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a
+          href="#"
+          class="hover:text-indigo-400 transition-colors duration-300"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="#"
+          class="hover:text-indigo-400 transition-colors duration-300"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="#"
+          class="hover:text-indigo-400 transition-colors duration-300"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p class="mt-4 text-sm">
+        Desenvolvido com sono e muita pressa
+      </p>
+    </div>
+  </footer>  
+  <script>
+    AOS.init()
+  </script>
+</body>
+</html>

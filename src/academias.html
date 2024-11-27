@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br" class = "scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body class = "flex flex-col items-center justify-center min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full text-white shadow-lg z-50 transition-all duration-300 bg-[#0a152a]" id="navbar">
+      <div class="container mx-auto px-4 py-3">
+          <div class="flex justify-between items-center">
+              <a href="index.html" class="text-2xl font-bold text-yellow-400 flex items-center">
+                  <img src="./imgs/logo.png" alt="Logo" class="w-10 h-10 rounded-full mr-2 transition-transform duration-300 hover:rotate-12" />
+                  <span class="hover:text-yellow-300 transition-colors duration-300">FITNES</span>
+              </a>
+              <div class="hidden md:flex space-x-6">
+                  <a href="index.html" class="nav-link text-2xl hover:text-yellow-400 transition-colors duration-300">
+                      <i class="fas fa-home mr-2"></i> &lt; Voltar
+                  </a>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <!-- Home Section -->
+  <section id="home" class="w-full pt-28 pb-24 bg-cover bg-center h-screen text-white min-h-screen flex items-center relative overflow-hidden" style="background-image: url('./imgs/BG-Academias.png')">
+      <div class="container mx-auto px-6 relative z-10">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
+                  <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gray-100">
+                      Veja oque lhe aguarda na <span class="text-yellow-300">FITNES</span>
+                  </h1>
+                  <p class="text-1xl italic md:text-2xl mb-8">Tudo oque você precisa</p>
+                  <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                      <a href="#academy" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                          <i class="fas fa-envelope mr-2"></i>Vamos lá.
+                      </a>
+                  </div>
+              </div>
+              <div class="md:w-1/2 mt-12 md:mt-0 ml-96" data-aos="fade-left" data-aos-duration="1000">
+                  <blockquote class="text-2xl italic font-semibold text-white mb-8">
+                      "Os limites só existem se você os deixar existir." – <span class="text-gray-500">Son Goku</span>
+                  </blockquote>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Academy Section -->
+  <section id='academy' class="py-12 w-full bg-yellow-100">
+      <h1 class="page-header text-center mx-auto mb-4 text-6xl font-bold text-black">Nossa academia</h1>
+      <div class="container p-7 mx-auto text-center">
+          <!-- Áreas -->
+          <h2 class="text-2xl font-bold mb-8">Áreas</h2>
+          <div class="flex flex-wrap justify-center gap-6">
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="0">
+                  <img src="./imgs/cardio.png" alt="Cardio" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Cardio</p>
+              </div>
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="50">
+                  <img src="./imgs/massagem.png" alt="Cadeira de Massagem" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Massagem</p>
+              </div>
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="100">
+                  <img src="./imgs/yoga_2043787.png" alt="Sala de ginástica" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Sala de ginástica</p>
+              </div>
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="150">
+                  <img src="./imgs/academia (3).png" alt="Peso Livre" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Peso Livre</p>
+              </div>
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="200">
+                  <img src="./imgs/musculacao.png" alt="Musculação" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Musculação</p>
+              </div>
+          </div>
+
+          <!-- Estrutura -->
+          <h2 class="text-2xl font-bold mt-16 mb-8">Estrutura</h2>
+          <div class="flex flex-wrap justify-center gap-6">
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="250">
+                  <img src="./imgs/armario.png" alt="Armário rotativo" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Armário rotativo</p>
+              </div>
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="300">
+                  <img src="./imgs/banheiro.png" alt="Ducha aquecida" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Ducha aquecida</p>
+              </div>
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="350">
+                  <img src="./imgs/academia (2).png" alt="Professores formados" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Professores formados</p>
+              </div>
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="400">
+                  <img src="./imgs/ar-condicionado.png" alt="Ar condicionado" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Ar condicionado</p>
+              </div>
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="450">
+                  <img src="./imgs/balanca.png" alt="Balança de Bioimpedância" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Balança de Bioimpedância</p>
+              </div>
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="500">
+                  <img src="./imgs/bebida-energetica.png" alt="Smart Fit Energy" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Smart Fit Energy</p>
+              </div>
+              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="550">
+                  <img src="./imgs/peso.png" alt="Equipamentos modernos" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+                  <p class="text-lg font-medium">Equipamentos modernos</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <script>
+    AOS.init()
+  </script>
+</body>
+</html>

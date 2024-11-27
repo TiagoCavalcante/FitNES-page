@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body class="bg-gradient-to-t from-black to-indigo-950 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Navbar -->
+    <nav
+        class="fixed top-0 w-full text-white shadow-lg z-50 transition-all duration-300 bg-[#0a152a]"
+        id="navbar"
+    >
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a
+                    href="index.html"
+                    class="text-2xl font-bold text-yellow-400 flex items-center"
+                >
+                    <img
+                        src="./imgs/logo.png"
+                        alt="Logo"
+                        class="w-10 h-10 rounded-full mr-2 transition-transform duration-300 hover:rotate-12"
+                    />
+                    <span class="hover:text-yellow-300 transition-colors duration-300">
+                        FITNES
+                    </span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a
+                        href="index.html"
+                        class="nav-link text-2xl hover:text-yellow-400 transition-colors duration-300"
+                    >
+                        <i class="fas fa-home mr-2"></i> &lt; Voltar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="mt-20 bg-white bg-opacity-20 p-10 rounded-lg shadow-xl w-full max-w-7xl">
+
+        <!-- Pricing Cards Section -->
+        <div class="flex flex-col lg:flex-row gap-8 justify-center items-center">
+            <!-- Card 1: Starter -->
+            <div class="bg-white shadow-md rounded-lg p-8 w-full max-w-sm border border-gray-200" data-aos = 'fade-right' data-aos-duration="1000">
+                <h3 class="text-xl font-semibold text-gray-800">Basic</h3>
+                <p class="mt-2 text-gray-600">Ideal para você que está começando no mundo FITNES.</p>
+                <div class="mt-6 text-4xl font-bold text-gray-900">
+                    R$89.90 <span class="text-lg font-medium text-gray-600">/Mês</span>
+                </div>
+                <button class="mt-6 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
+                    Comece agora
+                </button>
+                <ul class="mt-8 space-y-4 text-gray-700">
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">❌</span> Personal Trainer
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">❌</span> Liberação miofascial
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">❌</span> Todas as academias disponíveis
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Musculação e Zumba
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Treinos pelo App
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Avaliações trimestrais
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 2: Growth -->
+            <div class="bg-gray-900 shadow-md rounded-lg p-8 w-full max-w-sm border-2 border-indigo-600" data-aos = 'fade-up' data-aos-duration="1000">
+                <h3 class="text-3xl font-semibold text-gray-500">Black</h3>
+                <p class="mt-2 text-gray-400">Quer evoluir nos treinos e ter tudo por um preço acessível? Este é o plano ideal pra você.</p>
+                <div class="mt-6 text-4xl font-bold text-yellow-500">
+                    R$149.90 <span class="text-lg font-medium text-gray-500">/Mês</span>
+                </div>
+                <button class="mt-6 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
+                    Comece agora
+                </button>
+                <ul class="mt-8 text-lg space-y-4 text-gray-500">
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Avaliações mensais
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Personal Trainer
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Treinos e acompanhamentos pelo App.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Mais de 15.000 academias disponíveis em todo País.
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Liberação miofascial
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Musculação, Crossfit, Yoga, Zumba e todas as outras atividades disponíveis.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 3: Scale -->
+            <div class="bg-white shadow-md rounded-lg p-8 w-full max-w-sm border border-gray-200" data-aos = 'fade-left' data-aos-duration="1000">
+                <h3 class="text-xl font-semibold text-gray-800">Smart</h3>
+                <p class="mt-2 text-gray-600">Plano certo pra você que quer desfrutar do melhor, sem se comprometer..</p>
+                <div class="mt-6 text-4xl font-bold text-gray-900">
+                    R$169.90 <span class="text-lg font-medium text-gray-600">/Mês</span>
+                </div>
+                <button class="mt-6 w-full text-xl bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
+                    Comece agora
+                </button>
+                <ul class="mt-8 space-y-4 text-gray-700">
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Avaliações mensais
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Personal Trainer
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Treinos e acompanhamentos pelo App.
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Mais de 15.000 academias disponíveis em todo País.
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Liberação miofascial
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-indigo-600 mr-2">✔️</span> Musculação, Crossfit, Yoga, Zumba e todas as outras atividades disponíveis.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
