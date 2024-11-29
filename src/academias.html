@@ -1,169 +1,178 @@
 <!DOCTYPE html>
-<html lang="pt-br" class = "scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="output.css">
-    <title>Document</title>
-</head>
-<body class = "flex flex-col items-center justify-center min-h-screen">
+<html lang="pt-br" class="scroll-smooth">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="output.css">
+  <title>Academias</title>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen">
   <!-- Navbar -->
   <nav class="fixed top-0 w-full text-white shadow-lg z-50 transition-all duration-300 bg-gray-900" id="navbar">
-      <div class="container mx-auto px-4 py-3">
-          <div class="flex justify-between items-center">
-              <a href="index.html" class="text-2xl font-bold text-yellow-400 flex items-center">
-                  <img src="./imgs/logo.png" alt="Logo" class="w-10 h-10 rounded-full mr-2 transition-transform duration-300 hover:rotate-12" />
-                  <span class="hover:text-yellow-300 transition-colors duration-300">FITNES</span>
-              </a>
-              <div class="hidden md:flex space-x-6">
-                  <a href="index.html" class="nav-link text-2xl hover:text-yellow-400 transition-colors duration-300">
-                      <i class="fas fa-home mr-2"></i> &lt; Voltar
-                  </a>
-              </div>
-          </div>
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold text-yellow-400 flex items-center">
+          <img src="./imgs/logo.png" alt="Logo"
+            class="w-10 h-10 rounded-full mr-2 transition-transform duration-300 hover:rotate-12" />
+          <span class="hover:text-yellow-300 transition-colors duration-300">FITNES</span>
+        </a>
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="nav-link text-2xl hover:text-yellow-400 transition-colors duration-300">
+            <i class="fas fa-home mr-2"></i> &lt; Voltar
+          </a>
+        </div>
       </div>
+    </div>
   </nav>
   <!-- Home -->
-  <section id="home" class="w-full pt-28 pb-24 bg-cover bg-center h-screen text-white min-h-screen flex items-center relative overflow-hidden" style="background-image: url('./imgs/BG-Academias.png')">
-      <div class="container mx-auto px-6 relative z-10">
-          <div class="flex flex-col md:flex-row items-center justify-between">
-              <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
-                  <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gray-100">
-                      Veja oque lhe aguarda na <span class="text-yellow-300">FITNES</span>
-                  </h1>
-                  <p class="text-1xl italic md:text-2xl mb-8">Tudo oque você precisa</p>
-                  <div class="mt-8 flex justify-center md:justify-start space-x-4">
-                      <a href="#icones" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
-                          <i class="fas fa-envelope mr-2"></i>Vamos lá.
-                      </a>
-                  </div>
-              </div>
-              <div class="md:w-1/2 mt-12 md:mt-0 ml-96" data-aos="fade-left" data-aos-duration="1000">
-                  <blockquote class="text-2xl italic font-semibold text-white mb-8">
-                      "A verdadeira motivação não é aquilo que te anima, mas aquilo que te transforma..." – <span class="text-gray-500">Bárbara Coré</span>
-                  </blockquote>
-              </div>
+  <section id="home"
+    class="w-full pt-28 pb-24 bg-cover bg-center h-screen text-white min-h-screen flex items-center relative overflow-hidden"
+    style="background-image: url('./imgs/BG-Academias.png')">
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gray-100">
+            Veja oque lhe aguarda na <span class="text-yellow-300">FITNES</span>
+          </h1>
+          <p class="text-1xl italic md:text-2xl mb-8">Tudo oque você precisa</p>
+          <div class="mt-8 flex justify-center md:justify-start space-x-4">
+            <a href="#icones"
+              class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
+              <i class="fas fa-envelope mr-2"></i>Vamos lá.
+            </a>
           </div>
+        </div>
+        <div class="md:w-1/2 mt-12 md:mt-0 ml-96" data-aos="fade-left" data-aos-duration="1000">
+          <blockquote class="text-2xl italic font-semibold text-white mb-8">
+            "A verdadeira motivação não é aquilo que te anima, mas aquilo que te transforma..." – <span
+              class="text-gray-500">Bárbara Coré</span>
+          </blockquote>
+        </div>
       </div>
+    </div>
   </section>
 
   <!-- Icones-->
   <section id='icones' class="py-12 h-screen w-full bg-yellow-100">
-      <h1 class="page-header mt-24 text-center mx-0 mb-4 text-6xl font-bold text-black">Nossa academia</h1>
-      <div class="container p-7 mx-auto text-center">
-          <!-- Áreas -->
-          <h2 class="text-2xl font-bold mb-8">Áreas</h2>
-          <div class="flex flex-wrap justify-center gap-6">
-              <a href="#cardio">
-                <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="0">
-                    <img src="./imgs/cardio.png" alt="Cardio" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
-                    <p class="text-lg font-medium">Cardio</p>
-                </div>
-              </a>
-              <a href="#massagem">
-                <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="50">
-                    <img src="./imgs/massagem.png" alt="Cadeira de Massagem" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
-                    <p class="text-lg font-medium">Massagem</p>
-                </div>
-              </a>
-              <a href="#musculacao">
-                <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="200">
-                    <img src="./imgs/musculacao.png" alt="Musculação" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
-                    <p class="text-lg font-medium">Musculação</p>
-                </div>
-              </a>
-              <a href="#peso">
-              <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="150">
-                  <img src="./imgs/academia (3).png" alt="Peso Livre" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
-                  <p class="text-lg font-medium">Peso Livre</p>
-              </div>
-              </a>
-              <a href="#ginastica">
-                <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="100">
-                    <img src="./imgs/yoga_2043787.png" alt="Sala de ginástica" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
-                    <p class="text-lg font-medium">Sala de ginástica</p>
-                </div>
-              </a>
+    <h1 class="page-header mt-24 text-center mx-0 mb-4 text-6xl font-bold text-black">Nossa academia</h1>
+    <div class="container p-7 mx-auto text-center">
+      <!-- Áreas -->
+      <h2 class="text-2xl font-bold mb-8">Áreas</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="#cardio">
+          <div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="0">
+            <img src="./imgs/cardio.png" alt="Cardio" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+            <p class="text-lg font-medium">Cardio</p>
           </div>
-
-          <!-- Estrutura -->
-          <h2 class="text-2xl font-bold mt-16 mb-8">Estrutura</h2>
-          <a href="#estrutura">
-            <div class="flex flex-wrap justify-center gap-6">
-                <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="250">
-                    <img src="./imgs/armario.png" alt="Armário rotativo" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
-                    <p class="text-lg font-medium">Armário rotativo</p>
-                </div>
-                <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="300">
-                    <img src="./imgs/banheiro.png" alt="Ducha aquecida" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
-                    <p class="text-lg font-medium">Ducha aquecida</p>
-                </div>
-                <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="350">
-                    <img src="./imgs/balanca.png" alt="Professores formados" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
-                    <p class="text-lg font-medium">Balança de impedância</p>
-                </div>
-                <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="400">
-                    <img src="./imgs/ar-condicionado.png" alt="Ar condicionado" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
-                    <p class="text-lg font-medium">Ar condicionado</p>
-                </div>
-                <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="500">
-                    <img src="./imgs/bebida-energetica.png" alt="Smart Fit Energy" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
-                    <p class="text-lg font-medium">FITNES Energy</p>
-                </div>
-                <div class="flex flex-col items-center" data-aos ="flip-right" data-aos-delay="550">
-                    <img src="./imgs/peso.png" alt="Equipamentos modernos" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
-                    <p class="text-lg font-medium">Equipamentos modernos</p>
-                </div>
-            </div>
-          </a>
+        </a>
+        <a href="#massagem">
+          <div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="50">
+            <img src="./imgs/massagem.png" alt="Cadeira de Massagem"
+              class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+            <p class="text-lg font-medium">Massagem</p>
+          </div>
+        </a>
+        <a href="#musculacao">
+          <div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="200">
+            <img src="./imgs/musculacao.png" alt="Musculação" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+            <p class="text-lg font-medium">Musculação</p>
+          </div>
+        </a>
+        <a href="#peso">
+          <div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="150">
+            <img src="./imgs/academia (3).png" alt="Peso Livre" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+            <p class="text-lg font-medium">Peso Livre</p>
+          </div>
+        </a>
+        <a href="#ginastica">
+          <div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="100">
+            <img src="./imgs/yoga_2043787.png" alt="Sala de ginástica"
+              class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+            <p class="text-lg font-medium">Sala de ginástica</p>
+          </div>
+        </a>
       </div>
+
+      <!-- Estrutura -->
+      <h2 class="text-2xl font-bold mt-16 mb-8">Estrutura</h2>
+      <a href="#estrutura">
+        <div class="flex flex-wrap justify-center gap-6">
+          <div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="250">
+            <img src="./imgs/armario.png" alt="Armário rotativo"
+              class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+            <p class="text-lg font-medium">Armário rotativo</p>
+          </div>
+          <div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="300">
+            <img src="./imgs/banheiro.png" alt="Ducha aquecida" class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+            <p class="text-lg font-medium">Ducha aquecida</p>
+          </div>
+          <div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="350">
+            <img src="./imgs/balanca.png" alt="Professores formados"
+              class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+            <p class="text-lg font-medium">Balança de impedância</p>
+          </div>
+          <div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="400">
+            <img src="./imgs/ar-condicionado.png" alt="Ar condicionado"
+              class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+            <p class="text-lg font-medium">Ar condicionado</p>
+          </div>
+          <div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="500">
+            <img src="./imgs/bebida-energetica.png" alt="Smart Fit Energy"
+              class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+            <p class="text-lg font-medium">FITNES Energy</p>
+          </div>
+          <div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="550">
+            <img src="./imgs/peso.png" alt="Equipamentos modernos"
+              class="w-20 h-20 max-w-20 max-h-20 object-contain mb-2">
+            <p class="text-lg font-medium">Equipamentos modernos</p>
+          </div>
+        </div>
+      </a>
+    </div>
   </section>
   <!-- Cardio -->
   <section id="cardio" class="py-20 bg-gray-900 w-full">
     <div class="container mx-auto px-5">
       <a href="#icones">
-        <h2
-          class="text-5xl font-bold text-center text-white mb-12"
-          data-aos="fade-up" data-aos-duration="1000"
-        >Cardio
+        <h2 class="text-5xl font-bold text-center text-white mb-12" data-aos="fade-up" data-aos-duration="1000">Cardio
         </h2>
       </a>
       <div class="flex flex-col md:flex-row items-center justify-between">
         <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
-          <img class= 'p-1 shadow-md rounded-xl shadow-yellow-500'src="./imgs/area-cardio.png">
+          <img class='p-1 shadow-md rounded-xl shadow-yellow-500' src="./imgs/area-cardio.png">
         </div>
         <div class="md:w-1/2 md:pl-12" data-aos="fade-left" data-aos-duration="1000">
-          <blockquote
-            class="text-2xl italic font-semibold text-white mb-8"
-          >
+          <blockquote class="text-2xl italic font-semibold text-white mb-8">
             🏃‍♂️ Área de Cardio: Energia e Movimento!
           </blockquote>
           <p class="text-lg text-white leading-relaxed mb-6">
-            🏋️Nossa 
+            🏋️Nossa
             <span class="font-bold text-yellow-500">Área de cardio</span>
-             foi pensada para proporcionar um ambiente dinâmico e confortável para seus treinos aeróbicos.
+            foi pensada para proporcionar um ambiente dinâmico e confortável para seus treinos aeróbicos.
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
             💡 Contamos com equipamentos modernos como esteiras, elípticos,
-             bicicletas ergométricas e transport, todos pensados para melhorar
+            bicicletas ergométricas e transport, todos pensados para melhorar
             sua saúde cardiovascular, queimar calorias e aumentar sua resistência.
 
 
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
             🫀 Ideal para quem busca emagrecer, fortalecer o sistema cardiovascular
-             ou melhorar a performance atlética, o espaço conta com equipamentos ajustáveis
-              às suas necessidades, proporcionando treinos seguros e eficazes.
+            ou melhorar a performance atlética, o espaço conta com equipamentos ajustáveis
+            às suas necessidades, proporcionando treinos seguros e eficazes.
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
 
-            ❄️Além disso, o ambiente é climatizado e conta com televisores e sistemas de som, tornando seus treinos mais motivadores.
+            ❄️Além disso, o ambiente é climatizado e conta com televisores e sistemas de som, tornando seus treinos mais
+            motivadores.
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
-            👟 Venha acelerar seus batimentos e atingir seus objetivos com a gente!. 
+            👟 Venha acelerar seus batimentos e atingir seus objetivos com a gente!.
           </p>
         </div>
       </div>
@@ -173,45 +182,40 @@
   <section id="massagem" class="py-20 bg-gray-800 w-full">
     <div class="container mx-auto px-5">
       <a href="#icones">
-        <h2
-          class="text-5xl font-bold text-center text-white mb-12"
-          data-aos="fade-up" data-aos-duration="1000"
-        >Massagem
+        <h2 class="text-5xl font-bold text-center text-white mb-12" data-aos="fade-up" data-aos-duration="1000">Massagem
         </h2>
       </a>
       <div class="flex flex-col md:flex-row items-center justify-between">
         <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
-          <blockquote
-            class="text-2xl italic font-semibold text-white mb-8"
-          >
-          💆Área de Massagem: Relaxamento e Renovação!
+          <blockquote class="text-2xl italic font-semibold text-white mb-8">
+            💆Área de Massagem: Relaxamento e Renovação!
           </blockquote>
           <p class="text-lg text-white leading-relaxed mb-6">
             🏋️Após um treino intenso ou um dia estressante, a área de massagem
-             da nossa academia é o refúgio perfeito para relaxar e recuperar suas energias.
+            da nossa academia é o refúgio perfeito para relaxar e recuperar suas energias.
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
             🙅‍♂️ Com profissionais qualificados e técnicas variadas, como relaxamento,
-             desportiva ou terapêutica, garantimos um alívio das tensões musculares e
-              uma melhora na circulação sanguínea.
+            desportiva ou terapêutica, garantimos um alívio das tensões musculares e
+            uma melhora na circulação sanguínea.
 
 
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
             🛏️O ambiente foi projetado para promover tranquilidade, com iluminação suave,
-             aromas relaxantes e música ambiente.
+            aromas relaxantes e música ambiente.
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
 
             💆‍♀️Uma sessão de massagem pode ser o complemento ideal para seu plano de treino,
-             ajudando na recuperação muscular e no alívio de dores e cansaço. Cuide do corpo
-              e da mente em um espaço feito para o seu bem-estar.
+            ajudando na recuperação muscular e no alívio de dores e cansaço. Cuide do corpo
+            e da mente em um espaço feito para o seu bem-estar.
           </p>
         </div>
         <div class="md:w-1/2 md:pl-12" data-aos="fade-left" data-aos-duration="1000">
-            <img class= 'p-1 shadow-md rounded-xl shadow-yellow-500'src="./imgs/area-massagem.png">
+          <img class='p-1 shadow-md rounded-xl shadow-yellow-500' src="./imgs/area-massagem.png">
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -219,42 +223,38 @@
   <section id="musculacao" class="py-20 bg-gray-900 w-full">
     <div class="container mx-auto px-5">
       <a href="#icones">
-        <h2
-          class="text-5xl font-bold text-center text-white mb-12"
-          data-aos="fade-up" data-aos-duration="1000"
-        >Musculação
+        <h2 class="text-5xl font-bold text-center text-white mb-12" data-aos="fade-up" data-aos-duration="1000">
+          Musculação
         </h2>
       </a>
       <div class="flex flex-col md:flex-row items-center justify-between">
         <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
-          <img class= 'p-1 shadow-md rounded-xl shadow-yellow-500'src="./imgs/area-musculacao.png">
+          <img class='p-1 shadow-md rounded-xl shadow-yellow-500' src="./imgs/area-musculacao.png">
         </div>
         <div class="md:w-1/2 md:pl-12" data-aos="fade-left" data-aos-duration="1000">
-          <blockquote
-            class="text-2xl italic font-semibold text-white mb-8"
-          >
-          🏋️ Área de Musculação: Força e Transformação!
+          <blockquote class="text-2xl italic font-semibold text-white mb-8">
+            🏋️ Área de Musculação: Força e Transformação!
           </blockquote>
           <p class="text-lg text-white leading-relaxed mb-6">
             🏋️A
             <span class="font-bold text-yellow-500">Área de muculação</span>
             da nossa academia é um verdadeiro paraíso para quem deseja
-             ganhar força, aumentar a massa muscular ou tonificar o corpo.
+            ganhar força, aumentar a massa muscular ou tonificar o corpo.
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
             💡 Contamos com equipamentos modernos, máquinas guiadas
-             e pesos livres, oferecendo uma grande variedade de opções
+            e pesos livres, oferecendo uma grande variedade de opções
             para diferentes grupos musculares.
 
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
             🙋‍♂️ Com o suporte dos nossos profissionais, você pode montar treinos
-             personalizados, focados em suas metas e nível de experiência.
+            personalizados, focados em suas metas e nível de experiência.
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
 
             💪 Além disso, garantimos um espaço organizado, limpo e seguro para que você
-             possa treinar com tranquilidade. Venha transformar seu corpo e superar seus limites conosco!
+            possa treinar com tranquilidade. Venha transformar seu corpo e superar seus limites conosco!
           </p>
         </div>
       </div>
@@ -264,44 +264,40 @@
   <section id="peso" class="py-20 bg-gray-800 w-full">
     <div class="container mx-auto px-5">
       <a href="#icones">
-        <h2
-          class="text-5xl font-bold text-center text-white mb-12"
-          data-aos="fade-up" data-aos-duration="1000"
-        >Peso Livre
+        <h2 class="text-5xl font-bold text-center text-white mb-12" data-aos="fade-up" data-aos-duration="1000">Peso
+          Livre
         </h2>
       </a>
       <div class="flex flex-col md:flex-row items-center justify-between">
         <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
-          <blockquote
-            class="text-2xl italic font-semibold text-white mb-8"
-          >
-          🏋️‍♀️ Área de Peso Livre: Liberdade e Potência!
+          <blockquote class="text-2xl italic font-semibold text-white mb-8">
+            🏋️‍♀️ Área de Peso Livre: Liberdade e Potência!
           </blockquote>
           <p class="text-lg text-white leading-relaxed mb-6">
             🏋️ Nossa área de peso livre é perfeita para quem busca liberdade
-             nos movimentos e treinos dinâmicos.
+            nos movimentos e treinos dinâmicos.
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
             🙅‍♂️ Aqui, você encontra halteres, barras, anilhas e kettlebells,
-             permitindo a execução de exercícios funcionais e que trabalham
-              múltiplos grupos musculares de forma eficiente.
+            permitindo a execução de exercícios funcionais e que trabalham
+            múltiplos grupos musculares de forma eficiente.
 
 
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
             💪 Os treinos com peso livre ajudam a melhorar o equilíbrio, a coordenação
-             e a força total do corpo. Com o auxílio de nossos profissionais, você
-              pode aprender as técnicas corretas para evitar lesões e aproveitar ao
-               máximo os benefícios deste tipo de treino.
+            e a força total do corpo. Com o auxílio de nossos profissionais, você
+            pode aprender as técnicas corretas para evitar lesões e aproveitar ao
+            máximo os benefícios deste tipo de treino.
           <p class="text-lg text-white leading-relaxed mb-6">
 
             🔥 Aumente sua potência e explore todo o potencial do seu corpo com nossos equipamentos de peso livre!
           </p>
         </div>
         <div class="md:w-1/2 md:pl-12" data-aos="fade-left" data-aos-duration="1000">
-            <img class= 'p-1 shadow-md rounded-xl shadow-yellow-500'src="./imgs/area-peso-livre.png">
+          <img class='p-1 shadow-md rounded-xl shadow-yellow-500' src="./imgs/area-peso-livre.png">
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -309,36 +305,32 @@
   <section id="ginastica" class="py-20 bg-gray-900 w-full">
     <div class="container mx-auto px-5">
       <a href="#icones">
-        <h2
-          class="text-5xl font-bold text-center text-white mb-12"
-          data-aos="fade-up" data-aos-duration="1000"
-        >Ginástica
+        <h2 class="text-5xl font-bold text-center text-white mb-12" data-aos="fade-up" data-aos-duration="1000">
+          Ginástica
         </h2>
       </a>
       <div class="flex flex-col md:flex-row items-center justify-between">
         <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
-          <img class= 'p-1 shadow-md rounded-xl shadow-yellow-500'src="./imgs/area-ginastica.png">
+          <img class='p-1 shadow-md rounded-xl shadow-yellow-500' src="./imgs/area-ginastica.png">
         </div>
         <div class="md:w-1/2 md:pl-12" data-aos="fade-left" data-aos-duration="1000">
-          <blockquote
-            class="text-2xl italic font-semibold text-white mb-8"
-          >
-          🤸‍♀️ Sala de Ginástica: Movimento e Diversão!
+          <blockquote class="text-2xl italic font-semibold text-white mb-8">
+            🤸‍♀️ Sala de Ginástica: Movimento e Diversão!
           </blockquote>
           <p class="text-lg text-white leading-relaxed mb-6">
-            🕺Se você ama aulas dinâmicas e motivadoras, nossa 
-            
+            🕺Se você ama aulas dinâmicas e motivadoras, nossa
+
             <span class="font-bold text-yellow-500">sala de ginástica</span>
             é o lugar certo!
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
             💃 Oferecemos aulas como dança, funcional, pilates
-             e yoga, todas conduzidas por instrutores experientes
-              que garantem treinos cheios de energia e segurança.
+            e yoga, todas conduzidas por instrutores experientes
+            que garantem treinos cheios de energia e segurança.
 
           </p>
           <p class="text-lg text-white leading-relaxed mb-6">
-            🌈 Aqui, cada aula é uma oportunidade de se divertir enquanto cuida da sua saúde! 
+            🌈 Aqui, cada aula é uma oportunidade de se divertir enquanto cuida da sua saúde!
           </p>
         </div>
       </div>
@@ -352,48 +344,54 @@
     <div class="container mt-40 mx-auto px-4">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
-        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos = "flip-right" data-aos-delay = '0'>
+        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos="flip-right"
+          data-aos-delay='0'>
           <img class="h-96" src="./imgs/estrutura-armario-rotativo.png">
           <div class="p-4">
             <p class="text-yellow-400 text-center text-2xl font-semibold">Armário rotativo</p>
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos = "flip-right" data-aos-delay = '100'>
+        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos="flip-right"
+          data-aos-delay='100'>
           <img class="h-96" src="./imgs/estrutura-ducha-aquecida.png">
           <div class="p-4">
             <p class="text-yellow-400 text-center text-2xl font-semibold">Ducha aquecida</p>
           </div>
         </div>
         <!-- Card 3 -->
-        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos = "flip-right" data-aos-delay = '200'>
+        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos="flip-right"
+          data-aos-delay='200'>
           <img class="h-96" src="./imgs/estrutura-balança-impendancia.png">
           <div class="p-4">
             <p class="text-yellow-400 text-center text-2xl font-semibold">Balança de impedância</p>
           </div>
         </div>
         <!-- Card 4 -->
-        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos = "flip-right" data-aos-delay = '300'>
+        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos="flip-right"
+          data-aos-delay='300'>
           <img class="h-96" src="./imgs/estrutura-ar-condicionado.png">
           <div class="p-4">
             <p class="text-yellow-400 text-center text-2xl font-semibold">Espaço climatizado</p>
           </div>
         </div>
         <!-- Card 5 -->
-        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos = "flip-right" data-aos-delay = '400'>
+        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos="flip-right"
+          data-aos-delay='400'>
           <img class="h-96" src="./imgs/estrutura-fitnes-energy.png">
           <div class="p-4">
             <p class="text-yellow-400 text-center text-2xl font-semibold">FITNES Energy</p>
           </div>
         </div>
         <!-- Card 6 -->
-        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos = "flip-right" data-aos-delay = '500'>
+        <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden shadow-yellow-500" data-aos="flip-right"
+          data-aos-delay='500'>
           <img class="h-96 w-full" src="./imgs/estrutura-equipamentos.png">
           <div class="p-4">
             <p class="text-yellow-400 text-center text-2xl font-semibold">Equipamentos modernos</p>
           </div>
         </div>
-    </div>
+      </div>
   </section>
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-8 w-full">
@@ -403,9 +401,10 @@
         Desenvolvido com sono e muita pressa
       </p>
     </div>
-  </footer>  
+  </footer>
   <script>
     AOS.init()
   </script>
 </body>
+
 </html>
