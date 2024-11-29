@@ -642,10 +642,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.ml-48 {
-  margin-left: 12rem;
-}
-
 .ml-96 {
   margin-left: 24rem;
 }
@@ -1428,6 +1424,14 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:ml-48 {
+    margin-left: 12rem;
+  }
+
+  .lg\:ml-96 {
+    margin-left: 24rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
